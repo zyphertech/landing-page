@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only: master
+    docker:
+      - image: circleci/node:7.10
+    environment:
+      - SOURCE_BRANCH: master
+      - TARGET_BRANCH: gh-pages
+    steps:
+      - checkout
+      - run: node -v
+      - run: npm -v
+      - run: sudo npm install
+      - run: sudo npm install gulp -g
+      - run: git config --global user.email "parthjansari@outlook.com"
+      - run: git config --global user.name "parth181195"
+      - run: ls
+      - run: gulp build
+      - run: git stash
+      - run: git checkout gh-pages
+      - run: git checkout master
+      - run: bash deploy.sh
