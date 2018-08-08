@@ -1,16 +1,63 @@
 @import 'modules/materialize.scss'
+@import './modules/partials/nav'
+@import './modules/partials/home'
+@import './modules/partials/blog'
+@import './modules/partials/why-us'
+@import './modules/partials/services'
+@import './modules/partials/clients'
+@import './modules/partials/approch'
+@import './modules/partials/slider.scss'
+@import './modules/partials/footer'
 
-body
-  font-family: QuickSand
-.content-wrapper
-  text-align: center
+
+::selection 
+  background: #444444 
+  color: #ffffff
+
+.title-underline
   position: relative
-  min-width: 100vw
-  min-height: calc(100vh - 64px - 70px)
-  .text 
+  padding-bottom: 10px
+  &:after  
+    content: ''
     position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
-.page-footer
-  padding: 0v
+    bottom: 0
+    left: 0
+    height: 3px
+    width: 70px
+    
+.no-marg
+  margin: 0
+.btn
+  &.circle
+    border-radius: 100px
+    font-family: Montserrat
+    font-weight: 300
+    box-shadow: 0 5px 15px #00000010
+    line-height: 40px
+    height: 40px
+    &:hover
+      box-shadow: 0 2.5px 10px #00000030
+
+
+.carousel 
+  background: #EEE
+
+.carousel-cell 
+  width: 28%
+  height: 200px
+  margin-right: 10px
+  background: #8C8
+  border-radius: 5px
+  counter-increment: carousel-cell
+
+.carousel-cell.is-selected 
+  background: #ED2
+
+/* cell number */
+.carousel-cell:before 
+  display: block
+  text-align: center
+  content: counter(carousel-cell)
+  line-height: 200px
+  font-size: 80px
+  color: white

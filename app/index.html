@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400|Roboto:100,300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+
   <!-- <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -24,7 +26,6 @@
         "contactType": "customer service"
       }
     }
-
   </script> -->
 </head>
 
@@ -33,27 +34,589 @@
   <div class="navbar-fixed">
     <nav class="home">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo center-align">
-          static site kickstarter
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
         </a>
+        <a href="#" class="brand-logo">
+          <img src="assets/images/logo.svg" alt="">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down table-of-contents">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#why-us">Why Us</a>
+          </li>
+          <li>
+            <a href="#service">Services</a>
+          </li>
+          <li>
+            <a href="#client">Clients</a>
+          </li>
+          <li>
+            <a href="#approch">Approch</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </div>
-  <div class="content-wrapper">
-    <span class="text">
-      simple boiler plate to kickstart static html site development with materlize,underscore and jquery.
-      <br>equiped with
-      <br> 🔥 hot reload 🔥
-    </span>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#why-us">Why Us</a>
+    </li>
+    <li>
+      <a href="#service">Services</a>
+    </li>
+    <li>
+      <a href="#client">Clients</a>
+    </li>
+    <li>
+      <a href="#approch">Approch</a>
+    </li>
+    <li>
+      <a href="#contact">Contact Us</a>
+    </li>
+  </ul>
+  <div id="home" class="scrollspy section">
+    <div class="bg">
+      <!-- <img src="assets/images//bg.svg" alt=""> -->
+    </div>
+    <div class="home-wrapper">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col s12 m12 l6">
+            <div class="we">
+              <div class="small-text">
+                We Are
+              </div>
+              <div class="lrg-text">
+                Zypher
+              </div>
+            </div>
+            <div class="tag-line">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vero expedita? Voluptates labore corrupti laborum officiis,
+              dolores atque! Tempora sit accusamus minima, ad esse aut nihil deleniti. Cum, sit consequatur.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div id="why-us" class="scrollspy section">
+    <div class="container">
+      <div class="row title-row">
+        <div class="page-title title-underline">
+          Why us
+        </div>
+      </div>
+      <div class="row card-row">
+        <div class="col s12 m6 l4">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets/images/icons/automation.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Automation
+            </div>
+            <div class="content">
+              We leverage the latest technologies in order to make sure that all our engagements are transparent and our customers remains
+              well informed.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets/images/icons/tech.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Latest Technologies
+            </div>
+            <div class="content">
+              Our teams are constantly adapting the latest technologies. With the latest technologies and frameworks, we deliver speed
+              and quality at scale.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets/images/icons/customer.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Customer Collaboration
+            </div>
+            <div class="content">
+              We keep customer satisfaction as our centre goal and continuously strive to achieve it by building long-lasting relations
+              with our coustomers
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets/images/icons/sullotion.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Solutions rather than just services
+            </div>
+            <div class="content">
+              Our team of experts is here to find solutions to all your technology related troubles and provide you with the end to end
+              solutions which increases your business outcome and growth.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets/images/icons/quality.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Quality Engineering with speed
+            </div>
+            <div class="content">
+              We are determined towards delivering quality services to our client as per expectations and in the given time period.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets/images/icons/endurance.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Long lasting Endurance
+            </div>
+            <div class="content">
+              we are always ready to go an extra mile to make sure that we build the best possible product for you.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="service" class="scrollspy section">
+    <div class="container">
+      <div class="row title-row">
+        <div class="page-title title-underline">
+          Services
+        </div>
+      </div>
+      <div class="row card-row">
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets//images/icons/code.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Development
+            </div>
+            <div class="content">
+              We leverage the latest technologies in order to make sure that all our engagements are transparent and our customers remains
+              well informed.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets//images/icons/cloud.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              Infrastructure
+              <br> Engineering
+
+            </div>
+            <div class="content">
+              We leverage the latest technologies in order to make sure that all our engagements are transparent and our customers remains
+              well informed.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets//images/icons/ui.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              UI/UX
+              <br> Design
+            </div>
+            <div class="content">
+              We leverage the latest technologies in order to make sure that all our engagements are transparent and our customers remains
+              well informed.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <img src="./assets//images/icons/team.svg" alt="">
+              </div>
+            </div>
+            <div class="title">
+              IT Staff
+              <br> Augmentation
+            </div>
+            <div class="content">
+              We leverage the latest technologies in order to make sure that all our engagements are transparent and our customers remains
+              well informed.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="client" class="scrollspy section">
+    <div class="container">
+      <div class="row title-row">
+        <div class="page-title title-underline">
+          Clients
+        </div>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="wrapper">
+              <div class="img-wrapper">
+                <img src="assets/images/Group 245.png" alt="">
+              </div>
+              <div class="text">
+                Lendcypher
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="wrapper">
+              <div class="img-wrapper">
+                <img src="assets/images/Group 245.png" alt="">
+              </div>
+              <div class="text">
+                Lendcypher
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="wrapper">
+              <div class="img-wrapper">
+                <img src="assets/images/Group 245.png" alt="">
+              </div>
+              <div class="text">
+                Lendcypher
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="wrapper">
+              <div class="img-wrapper">
+                <img src="assets/images/Group 245.png" alt="">
+              </div>
+              <div class="text">
+                Lendcypher
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="row portfolio-row">
+        <div class="row title-row ">
+          <div class="page-title title-underline small">
+            Our
+            <br>Portfolio
+          </div>
+        </div>
+        <div class="row content">
+          <div class="col s12 m12 l4 text-wrapper">
+            <div class="text">
+              Selected brands from our personal pool of experience
+            </div>
+            <div class="btn circle">
+              View all
+            </div>
+          </div>
+          <div class="col s12 m12 l8">
+            <div class="card">
+              <div class="wrapper">
+                <div class="inline image-wrapper">
+                  <img src="assets/images/lc.png" alt="">
+                </div>
+                <div class="inline text-wrapper">
+                  <div class="title">
+                    title
+                  </div>
+                  <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti libero sint atque facere non.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="approch" class="scrollspy section ">
+    <div class="container">
+      <div class="row title-row">
+        <div class="page-title left title-underline">
+          Our Approch
+        </div>
+      </div>
+      <div class="row">
+        <div class="page-disc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis impedit exercitationem error reiciendis necessitatibus!
+          Aperiam similique id, repellat rerum maiores error, adipisci expedita assumenda sunt, eligendi doloremque accusamus
+          ad.
+
+        </div>
+        <div class="col s12 step-wrapper">
+          <div class="row">
+            <div class="col s12 m12 l6">
+              <div class="img-wrapper">
+                <img src="assets/images/1.jpg" alt="">
+              </div>
+            </div>
+            <div class="col s12 m12 l6">
+              <div class="content-wrapper">
+                <div class="absolute-pos-wrapper">
+                  <div class="title">
+                    title
+                  </div>
+                  <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro accusamus? Dolorum necessitatibus atque minima
+                    reiciendis illo nulla quo, quam consectetur sapiente quidem, autem sunt magni nihil odio corporis iusto?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 step-wrapper">
+          <div class="row">
+            <div class="col s12 m12 l6 hide-on-large-only">
+              <div class="img-wrapper">
+                <img src="assets/images/2.jpg" alt="">
+              </div>
+            </div>
+            <div class="col s12 m12 l6">
+              <div class="content-wrapper">
+                <div class="absolute-pos-wrapper right-align">
+                  <div class="title">
+                    title
+                  </div>
+                  <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro accusamus? Dolorum necessitatibus atque minima
+                    reiciendis illo nulla quo, quam consectetur sapiente quidem, autem sunt magni nihil odio corporis iusto?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l6 hide-on-med-and-down">
+              <div class="img-wrapper">
+                <img src="assets/images/2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 step-wrapper">
+          <div class="row">
+            <div class="col s12 m12 l6">
+              <div class="img-wrapper">
+                <img src="assets/images/3.jpg" alt="">
+              </div>
+            </div>
+            <div class="col s12 m12 l6">
+              <div class="content-wrapper">
+                <div class="absolute-pos-wrapper">
+                  <div class="title">
+                    title
+                  </div>
+                  <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro accusamus? Dolorum necessitatibus atque minima
+                    reiciendis illo nulla quo, quam consectetur sapiente quidem, autem sunt magni nihil odio corporis iusto?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 step-wrapper ">
+          <div class="row">
+            <div class="col s12 m12 l6 hide-on-large-only">
+              <div class="img-wrapper">
+                <img src="assets/images/4.jpg" alt="">
+              </div>
+            </div>
+            <div class="col s12 m12 l6">
+
+              <div class="content-wrapper">
+                <div class="absolute-pos-wrapper right-align">
+                  <div class="title">
+                    title
+                  </div>
+                  <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro accusamus? Dolorum necessitatibus atque minima
+                    reiciendis illo nulla quo, quam consectetur sapiente quidem, autem sunt magni nihil odio corporis iusto?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l6 hide-on-med-and-down">
+              <div class="img-wrapper">
+                <img src="assets/images/4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="blog" class="scrollspy section ">
+    <div class="container">
+      <div class="row title-row">
+        <div class="page-title left title-underline">
+          Let's Have a look at
+          <br> Blogs
+        </div>
+        <div class="right hide-on-small-and-down">
+          <a href='https://medium.com/zyphertech' target="_blank" class="btn circle">
+            More Blogs
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="page-disc">
+          Some supercool content curated by our hand-picked team of mad scientists
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="icon">
+              <a target="_blank" href="https://medium.com/gdg-gandhinagar/create-nothing-app-with-flutter-f27e5652668a" class="img-wrapper">
+                <img src="https://cdn-images-1.medium.com/max/2000/1*9-ujy3CCBhrpkvS7TMLcoQ.png" alt="">
+              </a>
+            </div>
+            <div class="title">
+              <a target="_blank" href="https://medium.com/gdg-gandhinagar/create-nothing-app-with-flutter-f27e5652668a">Create Nothing app with flutter</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="icon">
+              <a target="_blank" href="https://medium.com/zyphertech/setup-ci-cd-pipeline-for-your-flutter-app-using-circleci-ef07e39982ab"
+                class="img-wrapper">
+                <img src="https://cdn-images-1.medium.com/max/2000/1*pSlPj0uCRYPPkEn2P2sK5Q.png" alt="">
+              </a>
+            </div>
+            <div class="title">
+              <a target="_blank" href="https://medium.com/zyphertech/setup-ci-cd-pipeline-for-your-flutter-app-using-circleci-ef07e39982ab">Setup CI/CD Pipeline for Flutter App On CircleCI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="center-align show-on-small hide-on-med-and-up">
+            <div class="btn circle">
+              More Blogs
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l6 about">
+          <div class="img-wrapper">
+            <img src="assets/images/logo.svg" alt="">
+          </div>
+          <div class="text">
+            3rd floor, Infocity Supermall II,</br>
+            Infocity, Gandhinagar-382006
+          </div>
+        </div>
+        <div class="col s12 m12 l5 offset-l1 page-details">
+          <div class="row">
+            <div class="col s6">
+              <div class="title">
+                Navigation
+              </div>
+              <ul class="pages">
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#aboutus">About Us</a>
+                </li>
+                <li>
+                  <a href="#work">Services</a>
+                </li>
+                <li>
+                  <a href="#client">Clients</a>
+                </li>
+                <li>
+                  <a href="#approch">Approch</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col s6 center-align">
+              <div class="title">
+                title
+              </div>
+              <ul class="pages">
+                <li>
+                  <a href="">page</a>
+                </li>
+                <li>
+                  <a href="">page</a>
+                </li>
+                <li>
+                  <a href="">page</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer-copyright">
       <div class="container center-align">
-        ©
-        <script type="text/javascript">
-          document.write(new Date().getFullYear());
-
-        </script> Zypher tech.
+        © 2018 Zypher tech.
       </div>
     </div>
   </footer>
@@ -61,6 +624,7 @@
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/undescore.js"></script>
   <script src="assets/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
   <script src="assets/js/scripts.js"></script>
 
 </body>

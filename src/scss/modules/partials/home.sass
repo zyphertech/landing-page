@@ -1,0 +1,63 @@
+#canvas
+  z-index: 500
+  opacity: 0.75
+  background: transparent
+#home  
+  position: relative
+  top: -64px
+  overflow: hidden
+  height: 100vh
+  .bg 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #0066FF
+    background-image: url('../images/bg.svg')
+    background-size: cover
+    background-position: bottom right
+    background-repeat: no-repeat
+    @media #{$medium-and-down}
+      background-size: 125%
+      background-image: url('../images/bg_full.svg')
+      background-position: bottom center
+    @media #{$small-and-down}
+      background-size: 300%
+      background-position: bottom center
+      @media only screen and (orientation: landscape)
+        background-image: none
+  .home-wrapper
+    width: 100%
+    height: 100%
+    position: relative
+    z-index: 0
+    .wrapper
+      margin-top: 64px  
+      .we
+        padding-left: 20px
+        font-family: Montserrat
+        .small-text
+          font-size: 4em
+          font-weight: 800
+          color: white
+          transform: translateY(50px)
+          @media #{$medium-and-down}
+            text-align: center
+          @media #{$small-and-down}
+            transform: translateY(10px)
+            font-size: 2em
+        .lrg-text
+          font-size: 8em
+          font-weight: 900
+          color: white
+          @media #{$medium-and-down}
+            text-align: center
+          @media #{$small-and-down}
+            font-size: 4em
+      .tag-line      
+        padding-left: 20px
+        font-family: Montserrat
+        color: white
+        @media #{$medium-and-down}
+          text-align: center
