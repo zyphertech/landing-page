@@ -6921,6 +6921,9 @@ nav {
     width: 400px;
     height: 300px;
     margin: auto; }
+    @media only screen and (max-width: 992px) {
+      #approch .container .step-wrapper .img-wrapper {
+        width: 100%; } }
     #approch .container .step-wrapper .img-wrapper img {
       width: 100%;
       height: 100%;
@@ -6958,6 +6961,9 @@ nav {
 .swiper-container {
   width: calc(100% - 100px);
   height: 200px; }
+  @media only screen and (max-width: 992px) {
+    .swiper-container {
+      width: 100%; } }
 
 .swiper-slide {
   text-align: center;
@@ -6983,6 +6989,10 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
   width: 70px !important;
   border-radius: 40px !important; }
+  @media only screen and (max-width: 992px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none; } }
 
 .swiper-button-next {
   background-image: url("../images/prev.svg") !important; }
@@ -6991,7 +7001,7 @@ nav {
   background-image: url("../images/next.svg") !important; }
 
 footer.page-footer {
-  background-color: #ffffff !important;
+  background-color: transparent !important;
   color: #000000; }
   footer.page-footer .footer-copyright {
     background-color: #ffffff !important;
@@ -7018,6 +7028,26 @@ footer .page-details .pages {
   font-size: 1em;
   font-weight: 400;
   color: #444; }
+
+#contact {
+  position: relative;
+  height: 400px;
+  margin-bottom: 100px; }
+  #contact .details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    width: 100%; }
+    #contact .details .text {
+      line-height: 60px;
+      font-family: Montserrat;
+      font-size: 2em;
+      font-weight: 600; }
+    #contact .details .btn, #contact .details .btn-large, #contact .details .btn-small {
+      margin-top: 20px;
+      background-color: #00A2FF; }
 
 ::-moz-selection {
   background: #444444;
@@ -7073,3 +7103,17 @@ footer .page-details .pages {
   line-height: 200px;
   font-size: 80px;
   color: white; }
+
+.bg.contactus {
+  -ms-transform: translateY(-25%);
+      transform: translateY(-25%);
+  z-index: -1;
+  overflow: visible;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .bg.contactus img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
