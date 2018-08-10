@@ -16,23 +16,33 @@
 <body>
   <div id="work-page">
     <div class="navbar-fixed">
-      <nav class="">
+      <nav class="home">
         <div class="nav-wrapper">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
-          <a href="index.html" class="brand-logo">
+          <a href="#" class="brand-logo">
             <img src="assets/images/logo.svg" alt="">
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down table-of-contents">
             <li>
-              <a href="index.html#home">Home</a>
+              <a href="./index.html#home">Home</a>
             </li>
             <li>
-              <a href="index.html#why-us">Why Us</a>
+              <a href="./index.html#why-us">Why Us</a>
             </li>
             <li>
-              <a href="#work" class='active'>Portfolio</a>
+              <a href="./index.html#service">Services</a>
+            </li>
+
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="./index.html#approch">Approch</a>
+            </li>
+            <li>
+              <a href="./index.html#blog">Blogs</a>
             </li>
             <li>
               <a href="#contact">Contact Us</a>
@@ -43,16 +53,25 @@
     </div>
     <ul class="sidenav" id="mobile-demo">
       <li>
-        <a href="index.html#home">Home</a>
+        <a href="./index.html#home" class="sidenav-close">Home</a>
       </li>
       <li>
-        <a href="index.html#why-us">Why Us</a>
+        <a href="./index.html#why-us" class="sidenav-close">Why Us</a>
       </li>
       <li>
-        <a class='active' href="#work">Services</a>
+        <a href="./index.html#service" class="sidenav-close">Services</a>
       </li>
       <li>
-        <a href="#contact">Contact Us</a>
+        <a href="#" class="sidenav-close">Portfolio</a>
+      </li>
+      <li>
+        <a href="./index.html#approch" class="sidenav-close">Approch</a>
+      </li>
+      <li>
+        <a href="./index.html#blog" class="sidenav-close">Blogs</a>
+      </li>
+      <li>
+        <a href="#contact" class="sidenav-close">Contact Us</a>
       </li>
     </ul>
     <div id="home" class="scrollspy section no-pad">
@@ -65,15 +84,15 @@
     </div>
     <div id="work" class="scrollspy section no-pad">
       <div class="container" class="scrollspy section no-pad">
-        <div class="services" >
+        <div class="services">
           <div class="service" id="dev">
             <div class="head">
               <div class="title">
-                Development
+                Development & Design
               </div>
             </div>
             <div class="text">
-                Some of our clients to whom we have provided development services.
+              Some of our clients to whom we have provided development services.
             </div>
             <div class="technologies">
               <div class="row">
@@ -137,7 +156,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m6 l4 offset-l2 ">
+                <div class="col s12 m6 l4 ">
                   <div class="item center-align">
                     <div class="img center-align">
                       <img src="assets/images/logos/8.png" alt="">
@@ -157,77 +176,33 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="service" id="design">
-            <div class="head">
-              <div class="title">
-                Design
-              </div>
-            </div>
-            <div class="text">
-                Some of our clients to whom we have provided our design services.
-            </div>
-            <div class="technologies">
-              <div class="row">
                 <div class="col s12 m6 l4">
-                  <div class="item center-align">
-                    <div class="img center-align">
-                      <img src="assets/images/logos/1.svg" alt="">
-                    </div>
-                    <div class="text">
-                      Corridor funds
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="item center-align">
-                    <div class="img center-align">
-                      <img src="assets/images/logos/2.svg" alt="">
-                    </div>
-                    <div class="text">
-                      Lendcypher
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="item center-align">
-                    <div class="img center-align">
-                      <img src="assets/images/logos/4.png" alt="">
-                    </div>
-                    <div class="text">
-                      The 1947
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="item center-align">
-                    <div class="img center-align">
-                      <img src="assets/images/logos/5.png" alt="">
-                    </div>
-                    <div class="text">
-                      Career buddy
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12  m6  l3">
-                  <div class="item center-align">
-                    <div class="img center-align">
-                      <img src="assets/images/logos/9.svg" alt="">
-                    </div>
-                    <div class="text">
-                      Furrily
-                    </div>
-                  </div>
-                </div>
-                <div class="col s6 m4 l4">
                   <div class="item center-align">
                     <div class="img center-align">
                       <img src="assets/images/logos/10.png" alt="">
                     </div>
                     <div class="text">
                       Refer doc
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6 ">
+                  <div class="item center-align">
+                    <div class="img center-align">
+                      <img src="assets/images/logos/logo.svg" alt="">
+                    </div>
+                    <div class="text">
+                      Zync Tech
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6 ">
+                  <div class="item center-align">
+                    <div class="img center-align">
+                      <img src="assets/images/logos/time.svg" alt="">
+                    </div>
+                    <div class="text">
+                      Timejam
                     </div>
                   </div>
                 </div>
@@ -241,7 +216,7 @@
               </div>
             </div>
             <div class="text">
-                we love making things open source. here are some of our projects.
+              we love making things open source. here are some of our projects.
             </div>
             <div class="technologies">
               <div class="row">
@@ -250,27 +225,27 @@
                     Scaleman
                   </div>
                   <div class="text">
-                      Scaleman is a utility that allows the users of the digital ocean to autoscale droplets and attach it to load balancers.
+                    Scaleman is a utility that allows the users of the digital ocean to autoscale droplets and attach it to load balancers.
                   </div>
                   <div class="checkout">
-                    <a class="btn circle"  href="https://github.com/scaleman-dev" target="_blank">
+                    <a class="btn circle" href="https://github.com/scaleman-dev" target="_blank">
                       visit project >>
                     </a>
                   </div>
                 </div>
                 <div class="col s12 m12 l6">
-                    <div class="title">
-                        AsciiBinder Search
-                    </div>
-                    <div class="text">
-                        A small plugin developed to help the projects using asciibinder to implement search functionality in their site.
-                    </div>
-                    <div class="checkout">
-                      <a class="btn circle" href="https://github.com/gluster/ascii_binder_search_plugin" target="_blank">
-                        visit project >>
-                      </a>
-                    </div>
+                  <div class="title">
+                    AsciiBinder Search
                   </div>
+                  <div class="text">
+                    A small plugin developed to help the projects using asciibinder to implement search functionality in their site.
+                  </div>
+                  <div class="checkout">
+                    <a class="btn circle" href="https://github.com/gluster/ascii_binder_search_plugin" target="_blank">
+                      visit project >>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -297,70 +272,57 @@
     </div>
   </div>
   <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m12 l6 about">
-            <div class="img-wrapper">
-              <img src="assets/images/logo.svg" alt="">
-            </div>
-            <div class="text">
-              3rd floor, Infocity Supermall II,</br>
-              Infocity, Gandhinagar-382006
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l6 about">
+          <div class="img-wrapper">
+            <img src="assets/images/logo.svg" alt="">
           </div>
-          <div class="col s12 m12 l5 offset-l1 page-details">
-            <div class="row">
-              <div class="col s6 offset-s1">
-                <div class="title">
-                  Navigation
-                </div>
-                <ul class="pages">
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="./index.html#why-us">Why Us</a>
-                  </li>
-                  <li>
-                    <a href="./index.html#service">Services</a>
-                  </li>
-                  <li>
-                    <a href="./index.html#client">Portfolio</a>
-                  </li>
-                  <li>
-                    <a href="./index.html#approch">Approch</a>
-                  </li>
-                  <li>
-                    <a href="./index.html#contact">Contact Us</a>
-                  </li>
-                </ul>
+          <div class="text">
+              Rejuvenating your business with
+              <br> our user and design centric scalable solutions.
+          </div>
+        </div>
+        <div class="col s12 m12 l5 offset-l1 page-details">
+          <div class="row">
+            <div class="col s6 right">
+              <div class="title">
+                Navigation
               </div>
-              <div class="col s4 offset-s1 ">
-                <div class="title">
-                  Pages
-                </div>
-                <ul class="pages">
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Portfolio</a>
-                  </li>
-                  <li>
+              <ul class="pages">
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./index.html#why-us">Why Us</a>
+                </li>
+                <li>
+                  <a href="./index.html#service">Services</a>
+                </li>
+                <li>
                     <a href="./technologies.html">Technologies</a>
-                  </li>
-                </ul>
-              </div>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                  <a href="./index.html#approch">Approch</a>
+                </li>
+                <li>
+                  <a href="./index.html#contact">Contact Us</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container center-align">
-          © 2018 Zypher tech.
-        </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+        © 2018 Zypher tech.
       </div>
-    </footer>
+    </div>
+  </footer>
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/materialize.min.js"></script>
   <script src="assets/js/slider.js"></script>

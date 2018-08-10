@@ -53,7 +53,9 @@
     .card-row
       margin-bottom: 60px
       .card
-        height: 420px
+        height: 400px
+        @media #{$extra-large-and-up}
+          height: 360px
         @media #{$medium-and-down}
           height: 360px
         @media #{$small-and-down}
@@ -81,6 +83,6 @@
         .content
           margin-bottom: 10px
           text-align: center
-          color: #646464
+          color: #404040
           font-family: Montserrat
           font-weight: 400
