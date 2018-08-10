@@ -6555,7 +6555,11 @@ nav {
       nav .nav-wrapper .brand-logo {
         padding-left: 0; } }
     nav .nav-wrapper .brand-logo img {
-      height: 20px; }
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+      width: auto;
+      line-height: none;
+      height: 30px; }
   nav .nav-wrapper li {
     line-height: 100px;
     position: relative;
@@ -7083,6 +7087,8 @@ footer .about {
   footer .about .img-wrapper {
     max-width: 150px;
     padding-bottom: 10px; }
+    footer .about .img-wrapper img {
+      width: 100%; }
   footer .about .text {
     font-family: Montserrat;
     font-size: 1em;
