@@ -6680,7 +6680,7 @@ nav {
         padding-left: 20px;
         font-family: Montserrat;
         color: white;
-        font-size: 1.3em; }
+        font-size: 1.6em; }
         @media only screen and (max-width: 992px) {
           #home .home-wrapper .wrapper .tag-line {
             text-align: center; } }
@@ -6777,6 +6777,8 @@ nav {
       color: #404040;
       padding: 15px 0 10px;
       min-height: 78px; }
+      #why-us .container .card-content .title.small {
+        min-height: 37px; }
     #why-us .container .card-content .content {
       color: #404040;
       font-family: Montserrat;
