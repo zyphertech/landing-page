@@ -6784,6 +6784,10 @@ nav {
 
 #service {
   background-color: #00D664; }
+  #service .no-marg {
+    margin: 0; }
+    #service .no-marg .col {
+      padding: 0; }
   #service .title-underline:after {
     background-color: #ffffff; }
   #service .container {
@@ -6795,12 +6799,55 @@ nav {
         color: #ffffff;
         font-family: Montserrat;
         font-weight: 800; }
+        #service .container .title-row .page-title.small {
+          font-size: 2em; }
+    #service .container #technologies .btn, #service .container #technologies .btn-large, #service .container #technologies .btn-small, #service .container #technologies .blog-btn {
+      background-color: #ffffff;
+      color: #000000;
+      margin-top: 3.5px; }
+    #service .container #technologies .tech-wrapper {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 10px 10px 0 10px;
+      padding: 10px 10px 0 10px;
+      margin-bottom: 10px; }
+      #service .container #technologies .tech-wrapper .tech-card {
+        margin: auto;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        vertical-align: middle; }
+        #service .container #technologies .tech-wrapper .tech-card .img-wrapper {
+          margin: 0 10px 10px;
+          vertical-align: middle;
+          display: inline-block;
+          height: 50px; }
+          @media only screen and (max-width: 992px) {
+            #service .container #technologies .tech-wrapper .tech-card .img-wrapper {
+              margin: 0 0px 10px; } }
+          #service .container #technologies .tech-wrapper .tech-card .img-wrapper img {
+            height: 100%; }
+        #service .container #technologies .tech-wrapper .tech-card .text {
+          vertical-align: middle;
+          display: inline-block;
+          line-height: 50px;
+          color: #000000;
+          font-family: Montserrat;
+          padding-bottom: 10px;
+          font-weight: 400; }
     #service .container .card-row {
       margin-bottom: 60px; }
       #service .container .card-row .card {
+        height: 420px;
         border-radius: 15px;
         padding: 10px 15px;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
+        @media only screen and (max-width: 992px) {
+          #service .container .card-row .card {
+            height: 360px; } }
+        @media only screen and (max-width: 600px) {
+          #service .container .card-row .card {
+            height: auto; } }
         #service .container .card-row .card .icon-wrapper {
           margin: 5px 0; }
           #service .container .card-row .card .icon-wrapper .icon {
@@ -6828,12 +6875,20 @@ nav {
 #client .title-underline:after {
   background-color: #0088FF; }
 
+#client .btn, #client .btn-large, #client .btn-small, #client .blog-btn, #client .btn-bottom {
+  background-color: #0088FF;
+  color: #ffffff;
+  margin-top: 3.5px; }
+  #client .btn.btn-bottom, #client .btn-bottom.btn-large, #client .btn-bottom.btn-small, #client .blog-btn.btn-bottom, #client .btn-bottom.btn-bottom {
+    margin-top: 20px; }
+
 #client .container {
   width: 90%; }
   #client .container .title-row {
+    margin-top: 20px;
     margin-bottom: 10px; }
     #client .container .title-row .page-title {
-      font-size: 3em;
+      font-size: 2em;
       color: #000000;
       font-family: Montserrat;
       font-weight: 800; }
@@ -6923,7 +6978,8 @@ nav {
     margin: auto; }
     @media only screen and (max-width: 992px) {
       #approch .container .step-wrapper .img-wrapper {
-        width: 100%; } }
+        width: 100%;
+        height: auto; } }
     #approch .container .step-wrapper .img-wrapper img {
       width: 100%;
       height: 100%;
@@ -6959,7 +7015,8 @@ nav {
         font-weight: 400; }
 
 .swiper-container {
-  width: calc(100% - 100px);
+  width: 90%;
+  max-width: 1280px;
   height: 200px; }
   @media only screen and (max-width: 992px) {
     .swiper-container {
@@ -6981,11 +7038,18 @@ nav {
     font-family: Montserrat;
     font-weight: 600;
     color: #404040;
-    padding: 15px 0 10px; }
+    padding: 0 0 10px; }
+    .swiper-slide .text a {
+      color: #404040; }
+  .swiper-slide img {
+    width: 250px;
+    height: 100px;
+    object-fit: contain; }
 
 .swiper-button-next,
 .swiper-button-prev {
   color: #404040 !important;
+  background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
   width: 70px !important;
   border-radius: 40px !important; }
@@ -7048,6 +7112,82 @@ footer .page-details .pages {
     #contact .details .btn, #contact .details .btn-large, #contact .details .btn-small {
       margin-top: 20px;
       background-color: #00A2FF; }
+
+#work-page #home, #tech-page #home {
+  position: relative;
+  height: 400px; }
+  #work-page #home .img-wrapper, #tech-page #home .img-wrapper {
+    width: 100%;
+    height: 100%; }
+    #work-page #home .img-wrapper img, #tech-page #home .img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  #work-page #home .title, #tech-page #home .title {
+    position: absolute;
+    font-size: 5em;
+    font-size: 4em;
+    text-align: left;
+    color: #ffffff;
+    bottom: 20px;
+    left: 20px;
+    font-family: Montserrat;
+    font-weight: 800; }
+
+#work-page .container, #tech-page .container {
+  width: 90%; }
+
+#work-page .description, #tech-page .description {
+  font-size: 1.3em;
+  font-family: Montserrat;
+  font-weight: 300; }
+
+#work-page#tech-page .item, #tech-page#tech-page .item {
+  padding: 10px 0; }
+
+#work-page .services .service.projects, #tech-page .services .service.projects {
+  margin: 20px; }
+  #work-page .services .service.projects .title, #tech-page .services .service.projects .title {
+    line-height: 100px;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 300;
+    font-family: Montserrat; }
+  #work-page .services .service.projects .text, #tech-page .services .service.projects .text {
+    padding: 10px 0; }
+
+#work-page .services .service .head, #tech-page .services .service .head {
+  margin: 10px 0; }
+  #work-page .services .service .head .title, #tech-page .services .service .head .title {
+    vertical-align: top;
+    line-height: 100px;
+    display: inline-block;
+    font-size: 3em;
+    font-family: Montserrat;
+    font-weight: 300; }
+
+#work-page .services .service .text, #tech-page .services .service .text {
+  padding: 10px 20px;
+  font-size: 1.3em;
+  font-family: Montserrat;
+  font-weight: 300; }
+
+#work-page .services .service .technologies .item, #tech-page .services .service .technologies .item {
+  text-align: center;
+  padding: 30px 0; }
+  #work-page .services .service .technologies .item .text, #tech-page .services .service .technologies .item .text {
+    padding: 15px 0;
+    font-family: Montserrat;
+    font-weight: 300;
+    text-transform: capitalize; }
+  #work-page .services .service .technologies .item .img, #tech-page .services .service .technologies .item .img {
+    margin: auto;
+    height: 110px;
+    max-width: 200px; }
+    #work-page .services .service .technologies .item .img img, #tech-page .services .service .technologies .item .img img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%; }
 
 ::-moz-selection {
   background: #444444;
