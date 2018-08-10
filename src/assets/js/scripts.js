@@ -15,10 +15,10 @@ $(document).ready(function () {
         slidesPerGroup: 1,
       },
     },
-    // autoplay: {
-    //   delay: 8000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

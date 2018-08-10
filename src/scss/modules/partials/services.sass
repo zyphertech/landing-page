@@ -1,4 +1,8 @@
 #service
+  .no-marg
+    margin: 0
+    .col
+      padding: 0
   background-color: #00D664
   .title-underline
     &:after
@@ -12,9 +16,48 @@
           color: #ffffff
           font-family: Montserrat
           font-weight: 800
+          &.small
+            font-size: 2em
+    #technologies
+      .btn,.blog-btn
+        background-color: #ffffff
+        color: #000000
+        margin-top: 3.5px
+      .tech-wrapper
+        background: #ffffff
+        border-radius: 10px
+        padding: 10px 10px 0 10px
+        padding: 10px 10px 0 10px
+        margin-bottom: 10px
+        .tech-card
+          margin: auto
+          max-width: fit-content
+          vertical-align: middle
+          .img-wrapper 
+            margin: 0 10px 10px
+            @media #{$medium-and-down}
+              margin: 0 0px 10px
+            vertical-align: middle
+            display: inline-block
+            height: 50px
+            img
+              height: 100%
+          .text
+            vertical-align: middle
+            display: inline-block
+            line-height: 50px
+            color: #000000
+            font-family: Montserrat
+            padding-bottom: 10px
+            font-weight: 400
     .card-row
       margin-bottom: 60px
       .card
+        height: 420px
+        @media #{$medium-and-down}
+          height: 360px
+        @media #{$small-and-down}
+          height: auto
         border-radius: 15px
         padding: 10px 15px
         box-shadow: 0 0 50px rgba(0,0,0,0.1)
