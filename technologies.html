@@ -16,23 +16,33 @@
 <body>
   <div id="tech-page">
     <div class="navbar-fixed">
-      <nav class="">
+      <nav class="home">
         <div class="nav-wrapper">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
-          <a href="index.html" class="brand-logo">
+          <a href="#" class="brand-logo">
             <img src="assets/images/logo.svg" alt="">
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down table-of-contents">
             <li>
-              <a href="index.html#home">Home</a>
+              <a href="./index.html#home">Home</a>
             </li>
             <li>
-              <a href="index.html#why-us">Why Us</a>
+              <a href="./index.html#why-us">Why Us</a>
             </li>
             <li>
-              <a href="#work">Technologies</a>
+              <a href="./index.html#service">Services</a>
+            </li>
+
+            <li>
+              <a href="./index.html#client">Portfolio</a>
+            </li>
+            <li>
+              <a href="./index.html#approch">Approch</a>
+            </li>
+            <li>
+              <a href="./index.html#blog">Blogs</a>
             </li>
             <li>
               <a href="#contact">Contact Us</a>
@@ -43,16 +53,26 @@
     </div>
     <ul class="sidenav" id="mobile-demo">
       <li>
-        <a href="index.html#home">Home</a>
+        <a href="./index.html#home" class="sidenav-close">Home</a>
       </li>
       <li>
-        <a href="index.html#why-us">Why Us</a>
+        <a href="./index.html#why-us" class="sidenav-close">Why Us</a>
       </li>
       <li>
-        <a class='active' href="#work">Technologies</a>
+        <a href="./index.html#service" class="sidenav-close">Services</a>
+      </li>
+
+      <li>
+        <a href="./index.html#client" class="sidenav-close">Portfolio</a>
       </li>
       <li>
-        <a href="#contact">Contact Us</a>
+        <a href="./index.html#approch" class="sidenav-close">Approch</a>
+      </li>
+      <li>
+        <a href="./index.html#blog" class="sidenav-close">Blogs</a>
+      </li>
+      <li>
+        <a href="#contact" class="sidenav-close">Contact Us</a>
       </li>
     </ul>
     <div id="home" class="scrollspy section no-pad">
@@ -68,7 +88,7 @@
         <div class="services">
           <div class="row">
 
-            <div class="service col s12 m12 l6">
+            <div class="service col s12 m12 l12">
               <div class="head">
                 <div class="title">
                   Frontend
@@ -76,7 +96,7 @@
               </div>
               <div class="technologies">
                 <div class="row">
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/2.jpg" alt="">
@@ -86,7 +106,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/6.jpg" alt="">
@@ -99,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class="service col s12 m12 l6">
+            <div class="service col s12 m12 l12">
               <div class="head">
                 <div class="title">
                   CI/CD
@@ -107,7 +127,7 @@
               </div>
               <div class="technologies">
                 <div class="row">
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/8.jpg" alt="">
@@ -117,7 +137,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/1.jpg" alt="">
@@ -130,124 +150,31 @@
                 </div>
               </div>
             </div>
-            <div class="service col s12 m12 l6">
+            <div class="service col s12 m12 l12">
               <div class="head">
                 <div class="title">
-                    Databases
+                  Databases
                 </div>
               </div>
               <div class="technologies">
                 <div class="row">
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/12.jpg" alt="">
                       </div>
                       <div class="text">
-                          MongoDB
+                        MongoDB
                       </div>
                     </div>
                   </div>
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/11.jpg" alt="">
                       </div>
                       <div class="text">
-                          MariaDB
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="service col s12 m12 l6">
-              <div class="head">
-                <div class="title">
-                    Caches
-                </div>
-              </div>
-              <div class="technologies">
-                <div class="row">
-                  <div class="col s6">
-                    <div class="item center-align">
-                      <div class="img center-align">
-                        <img src="assets/images/tech/redis.svg" alt="">
-                      </div>
-                      <div class="text">
-                          Redis
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s6">
-                    <div class="item center-align">
-                      <div class="img center-align">
-                        <img src="assets/images/tech/memcached.svg" alt="">
-                      </div>
-                      <div class="text">
-                          Memcached
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="service col s12 m12 l6">
-              <div class="head">
-                <div class="title">
-                    Cross Platform Apps
-                </div>
-              </div>
-              <div class="technologies">
-                <div class="row">
-                  <div class="col s6">
-                    <div class="item center-align">
-                      <div class="img center-align">
-                        <img src="assets/images/tech/15.jpg" alt="">
-                      </div>
-                      <div class="text">
-                          Flutter
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s6">
-                    <div class="item center-align">
-                      <div class="img center-align">
-                        <img src="assets/images/tech/5.jpg" alt="">
-                      </div>
-                      <div class="text">
-                          Ionic
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="service col s12 m12 l6">
-              <div class="head">
-                <div class="title">
-                    Logging
-                </div>
-              </div>
-              <div class="technologies">
-                <div class="row">
-                  <div class="col s6">
-                    <div class="item center-align">
-                      <div class="img center-align">
-                        <img src="assets/images/tech/10.jpg" alt="">
-                      </div>
-                      <div class="text">
-                          Kibana
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s6">
-                    <div class="item center-align">
-                      <div class="img center-align">
-                        <img src="assets/images/tech/elastic-logstash.svg" alt="">
-                      </div>
-                      <div class="text">
-                          Logstash
+                        MariaDB
                       </div>
                     </div>
                   </div>
@@ -257,28 +184,121 @@
             <div class="service col s12 m12 l12">
               <div class="head">
                 <div class="title">
-                    Search
+                  Caches
                 </div>
               </div>
               <div class="technologies">
                 <div class="row">
-                  <div class="col s6 m4">
+                  <div class="col s12 m6">
+                    <div class="item center-align">
+                      <div class="img center-align">
+                        <img src="assets/images/tech/redis.svg" alt="">
+                      </div>
+                      <div class="text">
+                        Redis
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="item center-align">
+                      <div class="img center-align">
+                        <img src="assets/images/tech/memcached.svg" alt="">
+                      </div>
+                      <div class="text">
+                        Memcached
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service col s12 m12 l12">
+              <div class="head">
+                <div class="title">
+                  Cross Platform Apps
+                </div>
+              </div>
+              <div class="technologies">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="item center-align">
+                      <div class="img center-align">
+                        <img src="assets/images/tech/15.jpg" alt="">
+                      </div>
+                      <div class="text">
+                        Flutter
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="item center-align">
+                      <div class="img center-align">
+                        <img src="assets/images/tech/5.jpg" alt="">
+                      </div>
+                      <div class="text">
+                        Ionic
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service col s12 m12 l12">
+              <div class="head">
+                <div class="title">
+                  Logging
+                </div>
+              </div>
+              <div class="technologies">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="item center-align">
+                      <div class="img center-align">
+                        <img src="assets/images/tech/10.jpg" alt="">
+                      </div>
+                      <div class="text">
+                        Kibana
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="item center-align">
+                      <div class="img center-align">
+                        <img src="assets/images/tech/elastic-logstash.svg" alt="">
+                      </div>
+                      <div class="text">
+                        Logstash
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service col s12 m12 l12">
+              <div class="head">
+                <div class="title">
+                  Search
+                </div>
+              </div>
+              <div class="technologies">
+                <div class="row">
+                  <div class="col s12 m4">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/9.jpg" alt="">
                       </div>
                       <div class="text">
-                          Elastic Search
+                        Elastic Search
                       </div>
                     </div>
                   </div>
-                  <div class="col s6 m4">
+                  <div class="col s12 m4">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/solr.svg" alt="">
                       </div>
                       <div class="text">
-                          Solr
+                        Solr
                       </div>
                     </div>
                   </div>
@@ -288,7 +308,7 @@
                         <img src="assets/images/tech/algolia.svg" alt="">
                       </div>
                       <div class="text">
-                          Algolia
+                        Algolia
                       </div>
                     </div>
                   </div>
@@ -298,38 +318,38 @@
             <div class="service col s12 m12 l12">
               <div class="head">
                 <div class="title">
-                    Visualization
+                  Visualization
                 </div>
               </div>
               <div class="technologies">
                 <div class="row">
-                  <div class="col s6 m4">
+                  <div class="col s12 m4">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/nvd3.svg" alt="">
                       </div>
                       <div class="text">
-                          NVD3
+                        NVD3
                       </div>
                     </div>
                   </div>
-                  <div class="col s6 m4">
+                  <div class="col s12 m4">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/14.jpg" alt="">
                       </div>
                       <div class="text">
-                          Grafana
+                        Grafana
                       </div>
                     </div>
                   </div>
-                  <div class="col ss12 m4">
+                  <div class="col s12 m4">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/plotly.png" alt="">
                       </div>
                       <div class="text">
-                          Plotly
+                        Plotly
                       </div>
                     </div>
                   </div>
@@ -339,28 +359,28 @@
             <div class="service col s12 m12 l12">
               <div class="head">
                 <div class="title">
-                    Cloud Platforms
+                  Cloud Platforms
                 </div>
               </div>
               <div class="technologies">
                 <div class="row">
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/google-cloud.svg" alt="">
                       </div>
                       <div class="text">
-                          GCP
+                        GCP
                       </div>
                     </div>
                   </div>
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/aws-logo.svg" alt="">
                       </div>
                       <div class="text">
-                          AWS 
+                        AWS
                       </div>
                     </div>
                   </div>
@@ -370,28 +390,28 @@
             <div class="service col s12 m12 l12">
               <div class="head">
                 <div class="title">
-                    Container Orchestraction
+                  Container Orchestraction
                 </div>
               </div>
               <div class="technologies">
                 <div class="row">
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/mesosphere.svg" alt="">
                       </div>
                       <div class="text">
-                          Mesosphere
+                        Mesosphere
                       </div>
                     </div>
                   </div>
-                  <div class="col s6">
+                  <div class="col s12 m6">
                     <div class="item center-align">
                       <div class="img center-align">
                         <img src="assets/images/tech/kubernets.svg" alt="">
                       </div>
                       <div class="text">
-                          Kubernetes 
+                        Kubernetes
                       </div>
                     </div>
                   </div>
@@ -421,70 +441,57 @@
     </div>
   </div>
   <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m12 l6 about">
-          <div class="img-wrapper">
-            <img src="assets/images/logo.svg" alt="">
-          </div>
-          <div class="text">
-            3rd floor, Infocity Supermall II,</br>
-            Infocity, Gandhinagar-382006
-          </div>
-        </div>
-        <div class="col s12 m12 l5 offset-l1 page-details">
-          <div class="row">
-            <div class="col s6 offset-s1">
-              <div class="title">
-                Navigation
-              </div>
-              <ul class="pages">
-                <li>
-                  <a href="./index.html">Home</a>
-                </li>
-                <li>
-                  <a href="./index.html#why-us">Why Us</a>
-                </li>
-                <li>
-                  <a href="./index.html#service">Technologies</a>
-                </li>
-                <li>
-                  <a href="./index.html#client">Portfolio</a>
-                </li>
-                <li>
-                  <a href="./index.html#approch">Approch</a>
-                </li>
-                <li>
-                  <a href="./index.html#contact">Contact Us</a>
-                </li>
-              </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l6 about">
+            <div class="img-wrapper">
+              <img src="assets/images/logo.svg" alt="">
             </div>
-            <div class="col s4 offset-s1 ">
-              <div class="title">
-                Pages
+            <div class="text">
+                Rejuvenating your business with
+                <br> our user and design centric scalable solutions.
+            </div>
+          </div>
+          <div class="col s12 m12 l5 offset-l1 page-details">
+            <div class="row">
+              <div class="col s6 right">
+                <div class="title">
+                  Navigation
+                </div>
+                <ul class="pages">
+                  <li>
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#why-us">Why Us</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#service">Services</a>
+                  </li>
+                  <li>
+                      <a href="#">Technologies</a>
+                  </li>
+                  <li>
+                      <a href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#approch">Approch</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#contact">Contact Us</a>
+                  </li>
+                </ul>
               </div>
-              <ul class="pages">
-                <li>
-                  <a href="./index.html">Home</a>
-                </li>
-                <li>
-                  <a href="./portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#">Technologies</a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container center-align">
-        © 2018 Zypher tech.
+      <div class="footer-copyright">
+        <div class="container center-align">
+          © 2018 Zypher tech.
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/materialize.min.js"></script>
   <script src="assets/js/slider.js"></script>
