@@ -6964,62 +6964,62 @@ nav {
         font-weight: 300;
         margin: 0; }
 
-#approch .title-underline:after {
+#approach .title-underline:after {
   background-color: #0088FF; }
 
-#approch .container {
+#approach .container {
   width: 90%; }
-  #approch .container .title-row {
+  #approach .container .title-row {
     margin-bottom: 10px; }
-    #approch .container .title-row .page-title {
+    #approach .container .title-row .page-title {
       font-size: 3em;
       color: #000000;
       font-family: Montserrat;
       font-weight: 800; }
-  #approch .container .page-disc {
+  #approach .container .page-disc {
     padding: 10px 0;
     font-size: 1.25em;
     color: #000000;
     font-family: Montserrat;
     font-weight: 300; }
-  #approch .container .step-wrapper .img-wrapper {
+  #approach .container .step-wrapper .img-wrapper {
     width: 400px;
     height: 300px;
     margin: auto; }
     @media only screen and (max-width: 992px) {
-      #approch .container .step-wrapper .img-wrapper {
+      #approach .container .step-wrapper .img-wrapper {
         width: 100%;
         height: auto; } }
-    #approch .container .step-wrapper .img-wrapper img {
+    #approach .container .step-wrapper .img-wrapper img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-  #approch .container .step-wrapper .content-wrapper {
+  #approach .container .step-wrapper .content-wrapper {
     height: 300px;
     position: relative; }
     @media only screen and (max-width: 992px) {
-      #approch .container .step-wrapper .content-wrapper {
+      #approach .container .step-wrapper .content-wrapper {
         height: auto;
         margin-bottom: 30px; } }
-    #approch .container .step-wrapper .content-wrapper .absolute-pos-wrapper {
+    #approach .container .step-wrapper .content-wrapper .absolute-pos-wrapper {
       position: absolute;
       top: 50%;
       -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
       @media only screen and (max-width: 992px) {
-        #approch .container .step-wrapper .content-wrapper .absolute-pos-wrapper {
+        #approach .container .step-wrapper .content-wrapper .absolute-pos-wrapper {
           position: static;
           top: 0;
           -ms-transform: translateY(0);
               transform: translateY(0);
           text-align: center !important; } }
-      #approch .container .step-wrapper .content-wrapper .absolute-pos-wrapper .title {
+      #approach .container .step-wrapper .content-wrapper .absolute-pos-wrapper .title {
         font-weight: 500;
         font-family: Montserrat;
         font-size: 2em;
         text-transform: capitalize;
         color: #404040; }
-      #approch .container .step-wrapper .content-wrapper .absolute-pos-wrapper .text {
+      #approach .container .step-wrapper .content-wrapper .absolute-pos-wrapper .text {
         color: #404040;
         font-family: Montserrat;
         font-weight: 400; }
