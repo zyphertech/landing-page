@@ -9,7 +9,7 @@
 
   gulp.task('css', function () {
   return gulp.src('src/scss/style.sass')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer('last 4 version'))
     .pipe(gulp.dest('app/assets/css'))
     .pipe(browserSync.reload({
